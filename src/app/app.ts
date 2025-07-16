@@ -1,12 +1,17 @@
-import { Component, signal } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+
+import { Component } from '@angular/core';
+import { HelloWord } from './hello-word/hello-word';
+import { RouterModule } from '@angular/router';
+import { CategoryList } from './category-list/category-list';
+import { BrandList } from './brand-list/brand-list';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  standalone: true,
+  imports: [HelloWord, RouterModule, CategoryList, BrandList],
   templateUrl: './app.html',
-  styleUrl: './app.css'
+  styleUrls: ['./app.css']
 })
-export class App {
-  protected readonly title = signal('demo');
+export class AppComponent {
+  message = 'Xin chào từ AppComponent!';
 }
