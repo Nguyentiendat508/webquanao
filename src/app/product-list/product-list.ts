@@ -1,16 +1,16 @@
+
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 
 
 @Component({
-  selector: 'app-hello-word',
-  standalone: true,
+  selector: 'app-product-list',
   imports: [CommonModule, FormsModule],
-  templateUrl: './hello-word.html',
-  styleUrls: ['./hello-word.css']
+  templateUrl: './product-list.html',
+  styleUrl: './product-list.css'
 })
-export class HelloWord {
+export class ProductList {
   products = [
     { id: 1, name: "Laptop", price: 1000, inStock: true },
     { id: 2, name: "Phone", price: 500, inStock: false },
