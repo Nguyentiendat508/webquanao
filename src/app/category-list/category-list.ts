@@ -3,9 +3,10 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-category-list',
+  standalone: true,
   imports: [CommonModule],
   templateUrl: './category-list.html',
-  styleUrl: './category-list.css',
+  styleUrls: ['./category-list.css'],
 })
 export class CategoryList {
   categories = [
